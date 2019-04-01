@@ -24,7 +24,7 @@ from keras.optimizers import Adam
 # In[2]:
 
 
-base_model=Xception(weights='imagenet',include_top=False) #imports the mobilenet model and discards the last 1000 neuron layer.
+base_model=MobileNet(weights='imagenet',include_top=False) #imports the mobilenet model and discards the last 1000 neuron layer.
 # base_model=MobileNet(weights='imagenet',include_top=False) #imports the mobilenet model and discards the last 1000 neuron layer.
 
 x=base_model.output
